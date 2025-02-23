@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "standalone",
+  experimental: {
+    appDir: true,
+  },
   images: {
     unoptimized: true, // Giúp tránh lỗi mất ảnh khi build tĩnh
   },
